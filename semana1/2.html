@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoedas</title>
+
+    <!-- tag de estilização  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: black;
+        }
+
+        body {
+            background-color: bisque;
+            border: 2px solid white;
+            margin: 1% 2%;
+            border-radius: 12px;
+            box-shadow: 0 0 1rem black;
+        }
+
+        header {
+            padding: 2% 5%;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            margin: 1% 2% 0 2%;
+            border-radius: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 4% 6% 4%;
+        }
+
+        label {
+            margin: 1% 0;
+        }
+
+        #nome,
+        #email,
+        #password {
+            border-radius: 24px;
+            outline: none;
+            padding: 1% 2%;
+            border: 1px solid black;
+            min-width: 50%;
+            max-width: 100%;
+        }
+
+        #display,
+        #sexo {
+            border-radius: 24px;
+            outline: none;
+            padding: 1% 2%;
+            border: 1px solid black;
+            min-width: 224px;
+            justify-content: center;
+            align-items: center;
+            max-width: 10%;
+            color: black;
+        }
+
+        .separate {
+            border-top: 1px solid black;
+        }
+
+        fieldset {
+            outline: none;
+            border: none;
+        }
+
+        .criptomoedas-opcoes {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+        }
+
+        button {
+            background-color: black;
+            color: gold;
+            border: grey;
+            box-shadow: 0 0 1rem black;
+            padding: 1% 2%;
+            margin-top: 2%;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        input::placeholder {
+            color: darkgrey;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: gold;
+            color: black;
+        }
+
+        footer {
+            border-top: 1px solid grey;
+            padding: 1% 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body> <!-- corpo da página -->
+    <header> <!-- cabeçalho da pagina -->
+        <h1>Criptomoedas</h1>
+    </header>
+
+    <div class="conteudo"> <!-- div para separar o conteudo principal -->
+        <form> <!-- tag de abertura do formulario -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="password" id="password" placeholder="Senha">
+
+            <label for="idade">Sua idade:</label>
+            <input type="range" id="vol" name="vol" value="18" min="18" max="100" oninput="display.value=value"
+                onchange="display.value=value">
+            <input type="number" id="display" value="18" oninput="vol.value=value" onchange="vol.value=value">
+
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo"> <!-- tag para criar uma seção de escolha única -->
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <fieldset>
+                <!-- tag para criar uma seção de múltiplas escolhas, onde cada <div> separa uma opção com um checkbox -->
+                <legend>Seleciona as criptomoedas que você conhece</legend>
+                <div>
+                    <input type="checkbox" id="Bitcoin" name="Bitcoin" checked>
+                    <label for="Bitcoin">Bitcoin</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Ethereum" name="Ethereum">
+                    <label for="Ethereum">Ethereum</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Theter" name="Theter">
+                    <label for="Theter">Theter</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="BNB" name="BNB">
+                    <label for="BNB">BNB</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="USD Coin" name="USD Coin">
+                    <label for="USD Coin">USD Coin</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="XRP" name="XRP">
+                    <label for="XRP">XRP</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Cardano" name="Cardano">
+                    <label for="Cardano">Cardano</label>
+                </div>
+            </fieldset> <!-- fechamento da seção de esoclhas -->
+
+            <button type="submit">Enviar</button> <!-- botão para enviar as escolhas feitas -->
+        </form>
+    </div>
+
+    <footer> <!-- rodapé da página com informações importantes -->
+        <p>Curso de Engenharia de Software - UniEVANGÉLICA</p>
+        <p>Disciplina de Programação Web</p>
+        <p>Dev: Caique Oliveira Carvalho - 2111304</p>
+        <p>Data: domingo, 2 abril 2023</p>
+    </footer>
+</body>
+
+</html>

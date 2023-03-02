@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoedas</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: black;
+        }
+
+        body {
+            background-color: bisque;
+            border: 2px solid white;
+            margin: 1% 2%;
+            border-radius: 12px;
+            box-shadow: 0 0 1rem black;
+        }
+
+        h1,
+        h2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            border-top: 1px solid grey;
+            padding-top: 1%;
+            font-size: 1.3rem;
+        }
+
+        header {
+            padding: 2% 5%;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            margin: 1% 2% 0 2%;
+            border-radius: 12px;
+        }
+
+        table {
+            padding: 1%;
+            margin: 0;
+            outline: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        td,
+        th {
+            border-radius: 6px;
+            border: 2px solid skyblue;
+            box-shadow: 0 0 0.5rem black;
+            padding: 0.5rem;
+        }
+
+        .tr0 {
+            background-color: skyblue;
+        }
+
+        .tr0:hover {
+            background-color: lightblue;
+        }
+
+        .tr1 {
+            background-color: #fdbebe;
+        }
+
+        .tr2 {
+            background-color: hsl(0, 95%, 92%);
+        }
+
+        .tr1:hover,
+        .tr2:hover {
+            background-color: hsl(0, 0%, 92%);
+        }
+
+        .col {
+            background-color: lime;
+        }
+
+        td:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .coluna:hover {
+            background-color: whitesmoke;
+        }
+
+        .fonte-pesquisa {
+            display: flex;
+            justify-content: center;
+            padding: 2% 4%;
+            border-top: 1px solid grey;
+        }
+
+        a {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        #cripto-logo {
+            max-height: 48px;
+        }
+
+        #cripto-logo-x {
+            max-height: 48px;
+            padding-left: 20%;
+        }
+
+        a:hover {
+            font-size: 1.2rem;
+            color: aqua;
+        }
+
+        footer {
+            border-top: 1px solid grey;
+            padding: 1% 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!-- cabeçalho da página -->
+        <h1>Criptomoedas</h1>
+    </header>
+    <main>
+        <h2>Top 7 criptomoedas</h2>
+        <table frame="void"> <!-- tabela "top 7 criptomoedas" -->
+            <tr class="tr0"> <!-- cabeçalho da tabela -->
+                <th>Criptomoeda</th>
+                <th>Preço ($)</th>
+                <th>Quantidade total</th>
+                <th>Quantidade atual</th>
+                <th>Sigla</th>
+                <th>Link</th>
+            </tr>
+            <tr class="tr1"> <!-- 1 primeira linha -->
+                <td>Bitcoin</td>
+                <td>$23,282.23</td>
+                <td>21.000.000</td>
+                <td>19.306.150</td>
+                <td>BTC</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/bitcoin/"><img id="cripto-logo"
+                            src="../images/btc_logo.png" alt="BTC Logo"></a>
+                </td>
+            </tr>
+            <tr class="tr2"> <!-- 2 segunda linha -->
+                <td>Ethereum</td>
+                <td>$1,626.30</td>
+                <td>ilimitado</td>
+                <td>122.373.866</td>
+                <td>ETH</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/ethereum/"><img id="cripto-logo-x"
+                            src="../images/eth_logo.png" alt="ETH Logo"></a>
+                </td>
+            </tr>
+            <tr class="tr1"> <!-- 3 terceira linha -->
+                <td>Theter</td>
+                <td>$1.00</td>
+                <td>ilimitado</td>
+                <td>73.141.766.321</td>
+                <td>USDT</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/tether/"><img id="cripto-logo"
+                            src="../images/usdt_logo.png" alt="USDT Logo"></a>
+                </td>
+            </tr>
+            <tr class="tr2"> <!-- 4 quarta linha -->
+                <td>Binance Coin</td>
+                <td>$287.59</td>
+                <td>ilimitado</td>
+                <td>159.979.964</td>
+                <td>BNB</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/bnb/"><img id="cripto-logo"
+                            src="../images/bnb_logo.png" alt="BNB Logo"></a></td>
+            </tr>
+            <tr class="tr1"> <!-- 5 quinta linha -->
+                <td>USD Coin</td>
+                <td>$1.00</td>
+                <td>ilimitado</td>
+                <td>42.828.369.562</td>
+                <td>USDC</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/usd-coin/"><img
+                            src="../images/usdc_logo.png" alt="USDC Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr2"> <!-- 6 sexta linha -->
+                <td>Ripple</td>
+                <td>$0.3759</td>
+                <td>100.000.000.000</td>
+                <td>99.989.113.908</td>
+                <td>XRP</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/xrp/"><img
+                            src="../images/xrp_logo.png" alt="XRP Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr1"> <!-- 7 sétima linha -->
+                <td>Cardano</td>
+                <td>$0.3494</td>
+                <td>45.000.000.000</td>
+                <td>35.538.184.454</td>
+                <td>ADA</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/cardano/"><img
+                            src="../images/ada_logo.png" alt="ADA Logo" id="cripto-logo"></a></td>
+            </tr>
+        </table>
+        <h2>Meme coins</h2>
+        <table frame="void"> <!-- tabela das meme coins-->
+            <tr class="tr0"> <!-- cabeçalho -->
+                <th>Criptomoeda</th>
+                <th>Preço ($)</th>
+                <th>Quantidade total</th>
+                <th>Quantidade atual</th>
+                <th>Sigla</th>
+                <th>Link</th>
+            </tr>
+            <tr class="tr1"> <!-- 1 primeira linha -->
+                <td>Dogecoin</td>
+                <td>0.08013</td>
+                <td>ilimitado</td>
+                <td>132.670.764.300</td>
+                <td>DOGE</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/dogecoin/"><img
+                            src="../images/doge_logo.png" alt="DOGE Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr2"> <!-- 2 segunda liha -->
+                <td>Shiba Inu</td>
+                <td>$0.00001191</td>
+                <td>ilimitado</td>
+                <td>589.735.030.408.323</td>
+                <td>SHIB</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/shiba-inu/"><img
+                            src="../images/shib_logo.png" alt="SHIB Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr1"> <!-- 3 terceira liha -->
+                <td>FLOKI</td>
+                <td>$0.00004329</td>
+                <td>20.000.000.000.000</td>
+                <td>9.942.355.954.723</td>
+                <td>FLOKI</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/floki-inu/"><img
+                            src="../images/floki_logo.png" alt="FLOKI Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr2"> <!-- 4 quarta linha -->
+                <td>Bone ShibaSwap</td>
+                <td>$1.63</td>
+                <td>230.000.000</td>
+                <td>230.003.023</td>
+                <td>Bone</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/bone-shibaswap/"><img
+                            src="../images/bone_logo.png" alt="BONE Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr1"> <!-- 5 quinta linha -->
+                <td>Dogelon Mars</td>
+                <td>$0.0000004132</td>
+                <td>1.000.000.000.000.000</td>
+                <td>1.000.000.000.000.000</td>
+                <td>ELON</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/dogelon/"><img
+                            src="../images/elon_logo.png" alt="ELON Logo" id="cripto-logo"></a></td>
+            </tr>
+        </table>
+        <h2>Criptomoedas de inteligências artificiais</h2>
+        <table frame="void"> <!-- tabela das criptomoedas de inteligências artificiais-->
+            <tr class="tr0"> <!-- cabeçalho da tabela -->
+                <th>Criptomoeda</th>
+                <th>Preco ($)</th>
+                <th>Quantidade total</th>
+                <th>Quantidade atual</th>
+                <th>Sigla</th>
+                <th>Link</th>
+            </tr>
+            <tr class="tr1"> <!-- 1 primeira linha -->
+                <td>Artificial Liquid Intelligence</td>
+                <td>$0.06098</td>
+                <td>10.000.000.000</td>
+                <td>10.000.000.000</td>
+                <td>ALI</td>
+                <td><a target="_blank"
+                        href="https://coinmarketcap.com/currencies/alethea-artificial-liquid-intelligence-token/"><img
+                            src="../images/ali_logo.png" alt="ALI Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr2"> <!-- 2 segunda linha -->
+                <td>Fetch.ai</td>
+                <td>$0.4513</td>
+                <td>ilimitado</td>
+                <td>1.152.997.575</td>
+                <td>FET</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/fetch/"><img
+                            src="../images/fet_logo.png" alt="FET Logo" id="cripto-logo"></a></td>
+            </tr>
+            <tr class="tr1"> <!-- 3 terceira linha-->
+                <td>SingularityNET</td>
+                <td>$0.5169</td>
+                <td>2.000.000.000</td>
+                <td>1.260.824.845</td>
+                <td>AGIX</td>
+                <td><a target="_blank" href="https://coinmarketcap.com/currencies/singularitynet/"><img
+                            src="../images/agix_logo.png" alt="AGIX Logo" id="cripto-logo"></a></td>
+            </tr>
+        </table>
+    </main>
+
+    <div class="fonte-pesquisa">
+        <p>Fonte: <a target="_blank" href="https://coinmarketcap.com/">CoinMarketCap</a></p>
+    </div>
+
+    <footer> <!-- rodapé da página com informações importantes -->
+        <p class="final">Curso de Engenharia de Software - UniEVANGÉLICA</p>
+        <p class="final">Disciplina de Programação Web</p>
+        <p class="final">Dev: Caique Oliveira Carvalho - 2111304</p>
+        <p class="final">Data: domingo, 2 abril 2023</p>
+    </footer>
+</body>
+
+</html>

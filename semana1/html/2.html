@@ -2,9 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- configuração para reconhecer caracteres especiais -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- configura a página para ser renderizada como em outra versão do Internet Explorer -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- largura de tela para diferentes dispositivos -->
     <title>Criptomoedas</title>
 
     <!-- tag de estilização  -->
@@ -135,78 +137,80 @@
             align-items: center;
         }
     </style>
-</head>
+</head> <!-- final da tag cabeçalho -->
 
 <body> <!-- corpo da página. -->
     <header> <!-- cabeçalho da pagina -->
         <h1>Criptomoedas</h1>
-    </header>
+    </header> <!-- final do cabeçalho -->
 
     <div class="conteudo"> <!-- div para separar o conteudo principal -->
         <form> <!-- tag de abertura do formulario -->
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <label for="nome">Nome:</label> <!-- legenda para o input abaixo -->
+            <input type="text" id="nome" name="nome" placeholder="Nome"> <!-- input para o nome do usuario-->
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="E-mail">
+            <label for="email">E-mail:</label> <!-- legenda para o input abaixo -->
+            <input type="email" name="email" id="email" placeholder="E-mail"> <!-- input para o email do usuario-->
 
-            <label for="senha">Senha:</label>
+            <label for="senha">Senha:</label> <!-- legenda para o input abaixo -->
             <input type="password" name="password" id="password" placeholder="Senha">
+            <!-- input para a senha do usuario-->
 
-            <label for="idade">Sua idade:</label>
+            <label for="idade">Sua idade:</label> <!-- legenda para o input abaixo -->
             <input type="range" id="vol" name="vol" value="18" min="18" max="100" oninput="display.value=value"
-                onchange="display.value=value">
+                onchange="display.value=value"> <!-- opção para o usuario selecionar a idade de forma dinamica -->
             <input type="number" id="display" value="18" oninput="vol.value=value" onchange="vol.value=value">
+            <!-- mostrar o valor escolhido pelo usuario -->
 
-            <label for="sexo">Sexo</label>
+            <label for="sexo">Sexo</label> <!-- legenda para o input abaixo -->
             <select name="sexo" id="sexo"> <!-- tag para criar uma seção de escolha única -->
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Outro">Outro</option>
+                <option value="Masculino">Masculino</option> <!-- opção de masculino -->
+                <option value="Feminino">Feminino</option> <!-- opção de feminino -->
+                <option value="Outro">Outro</option> <!-- opção de outro -->
             </select>
 
             <fieldset>
                 <!-- tag para criar uma seção de múltiplas escolhas, onde cada <div> separa uma opção com um checkbox -->
-                <legend>Seleciona as criptomoedas que você conhece</legend>
-                <div>
-                    <input type="checkbox" id="Bitcoin" name="Bitcoin" checked>
-                    <label for="Bitcoin">Bitcoin</label>
-                </div>
+                <legend>Seleciona as criptomoedas que você conhece</legend> <!-- legenda para escolher opçoes-->
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="Bitcoin" name="Bitcoin" checked> <!-- checkbox para Bitcoin -->
+                    <label for="Bitcoin">Bitcoin</label> <!-- opçao de Bitcoin-->
+                </div> <!-- final da div -->
 
-                <div>
-                    <input type="checkbox" id="Ethereum" name="Ethereum">
-                    <label for="Ethereum">Ethereum</label>
-                </div>
+                <div> <!-- abertura da tag div-->
+                    <input type="checkbox" id="Ethereum" name="Ethereum"> <!-- checkbox para Ethereum -->
+                    <label for="Ethereum">Ethereum</label> <!-- opçao de Ethereum -->
+                </div> <!-- final da div-->
 
-                <div>
-                    <input type="checkbox" id="Theter" name="Theter">
-                    <label for="Theter">Theter</label>
-                </div>
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="Theter" name="Theter"> <!-- checkbox para Theter -->
+                    <label for="Theter">Theter</label> <!-- opção da Theter -->
+                </div> <!-- final da tag div -->
 
-                <div>
-                    <input type="checkbox" id="BNB" name="BNB">
-                    <label for="BNB">BNB</label>
-                </div>
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="BNB" name="BNB"> <!-- checkbox para BNB -->
+                    <label for="BNB">BNB</label> <!-- opção de BNB -->
+                </div> <!-- final da tag div -->
 
-                <div>
-                    <input type="checkbox" id="USD Coin" name="USD Coin">
-                    <label for="USD Coin">USD Coin</label>
-                </div>
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="USD Coin" name="USD Coin"> <!-- checkbox para USD Coin -->
+                    <label for="USD Coin">USD Coin</label> <!-- opçao de USD Coin -->
+                </div> <!-- final da tag div -->
 
-                <div>
-                    <input type="checkbox" id="XRP" name="XRP">
-                    <label for="XRP">XRP</label>
-                </div>
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="XRP" name="XRP"> <!-- checkbox da Ripple-->
+                    <label for="XRP">XRP</label> <!-- opçao da Ripple -->
+                </div> <!-- final da tag div -->
 
-                <div>
-                    <input type="checkbox" id="Cardano" name="Cardano">
-                    <label for="Cardano">Cardano</label>
-                </div>
+                <div> <!-- abertura da tag div -->
+                    <input type="checkbox" id="Cardano" name="Cardano"> <!-- checkbox para Cardano -->
+                    <label for="Cardano">Cardano</label> <!-- opçao de Cardano -->
+                </div> <!-- final da tag div -->
             </fieldset> <!-- fechamento da seção de esoclhas -->
 
             <button type="submit">Enviar</button> <!-- botão para enviar as escolhas feitas -->
         </form>
-    </div>
+    </div> <!-- final da div principal -->
 
     <footer> <!-- rodapé da página com informações importantes -->
         <p>Curso de Engenharia de Software - UniEVANGÉLICA</p>
@@ -214,6 +218,6 @@
         <p>Dev: Caique Oliveira Carvalho - 2111304</p>
         <p>Data: domingo, 2 abril 2023</p>
     </footer>
-</body>
+</body> <!-- finalizando o corpo da página -->
 
 </html>

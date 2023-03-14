@@ -1,0 +1,77 @@
+/* Importando uma fonte personalizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Define um conjunto de regras de estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* Define o estilo para o elemento 'body' */
+body {
+    background-color: bisque;
+    border: 2px solid white;
+    margin: 1% 2%;
+    border-radius: 12px;
+    box-shadow: 0 0 1rem black;
+}
+
+/* Define o estilo para os elementos 'h1' e 'h2' */
+h1,
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Define o estilo somente para o elemento 'h1' */
+h1 {
+    font-size: 1.5rem;
+}
+
+/* Define o estilo somente para o elemento 'h2' */
+h2 {
+    border-top: 1px solid grey;
+    padding-top: 1%;
+    font-size: 1.3rem;
+}
+
+/* Define o estilo para o elemento 'header' */
+header {
+    padding: 2% 5%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    margin: 1% 2% 0 2%;
+    border-radius: 12px;
+}
+
+/* Define o estilo para o elemento 'footer' */
+footer {
+    border-top: 1px solid grey;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Define o estilo para o elemento 'ul' */
+ul {
+    padding: 1% 0 0 5%;
+}
+
+/* Define o estilo para o elemento 'li' */
+li {
+    padding: 1% 0 0 0;
+}
+
+/* Define o estilo para o elemento 'a' */
+a {
+    text-decoration: underline;
+    color: blue;
+}

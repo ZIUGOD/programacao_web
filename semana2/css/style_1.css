@@ -83,9 +83,9 @@ ul {
 }
 
 /* personalização para quando o mouse sobrepor um elemento */
-#cmc:hover {
-    /* font-size: 1.1rem; */
-    text-decoration: dashed;
+#cmc-link:hover {
+    font-size: 1.1rem;
+    color: lime;
 }
 
 /* personalizando o rodapé da página */

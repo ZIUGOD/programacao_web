@@ -41,7 +41,7 @@ h2 {
     font-size: 1.3rem;
 }
 
-/* personzliando a tag 'header' */
+/* personalizando a tag 'header' */
 header {
     padding: 2% 5%;
     outline: none;
@@ -111,21 +111,23 @@ button {
     box-shadow: 0 0 1rem black;
     padding: 1% 2%;
     margin-top: 2%;
+    border: 2px solid white;
     border-radius: 24px;
     display: flex;
     flex-direction: row;
-}
-
-/* personalizando todos os textos de descanso */
-input::placeholder {
-    color: grey;
 }
 
 /* personalização para quando o cursor sobrepor os botões */
 button:hover {
     cursor: pointer;
     background-color: gold;
+    /* border: 2px solid black; */
     color: black;
+}
+
+/* personalizando todos os textos de descanso */
+input::placeholder {
+    color: grey;
 }
 
 /* personalizando o rodapé */
